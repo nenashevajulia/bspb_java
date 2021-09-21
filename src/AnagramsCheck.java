@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class AnagramsCheck {
     public static void main(String[] args) {
-        String firstStr = "AnaGRa m-s";
-        String secondStr = "Ma-G NAs ra";
+        String firstStr = "AnaGRa m-s!";
+        String secondStr = "Ma-G NAs ra!";
 
         String firstVar = firstStr.toLowerCase().replace(" ", "");
         String secondVar = secondStr.toLowerCase().replace(" ", "");
