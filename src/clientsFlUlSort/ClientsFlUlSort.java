@@ -5,9 +5,13 @@ import java.util.Comparator;
 
 public class ClientsFlUlSort {
     public static void main(String[] args) {
+
+        DataClient dataClient = new DataClient();
+        Client[] clients = dataClient.createClients(10);
+
         int resultLength = 0;
-        for (int i = 0; i < DataClients.clients.length; i++) {
-            var client = DataClients.clients[i];
+        for (int i = 0; i < clients.length; i++) {
+            var client = clients[i];
             if (client instanceof Individual) {
                 if (((Individual) client).getGender().equals("male")) {
                     resultLength++;
@@ -17,8 +21,8 @@ public class ClientsFlUlSort {
 
         Individual[] individualClients = new Individual[resultLength];
         int j = 0;
-        for (int i = 0; i < DataClients.clients.length; i++) {
-            var client = DataClients.clients[i];
+        for (int i = 0; i < clients.length; i++) {
+            var client = clients[i];
             if (client instanceof Individual) {
                 if (((Individual) client).getGender().equals("male")) {
                     individualClients[j] = (Individual) client;
@@ -36,4 +40,5 @@ public class ClientsFlUlSort {
 
         System.out.println(Arrays.deepToString(individualClients));
     }
+
 }

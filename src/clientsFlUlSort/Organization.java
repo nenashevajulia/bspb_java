@@ -1,12 +1,26 @@
 package clientsFlUlSort;
 
-public class Organization extends Clients {
-    private final String name;
-    private final long ogrn;
 
-    public Organization(int id, long inn, String name, long ogrn) {
-        super(id, inn);
+public class Organization extends Client {
+
+    private String name;
+    private long ogrn;
+
+    public String getName() {
+        return name;
+    }
+
+    public long getOgrn() {
+        return ogrn;
+    }
+
+    public void setName(String name) {
+
         this.name = name;
+    }
+
+    public void setOgrn(long ogrn) {
+
         this.ogrn = ogrn;
     }
 
@@ -14,4 +28,6 @@ public class Organization extends Clients {
     public String toString() {
         return "Organization{" + " id=" + getId() + " name=" + name + " inn=" + getInn() + " ogrn=" + ogrn + '}';
     }
+
 }
+

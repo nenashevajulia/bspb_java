@@ -1,16 +1,13 @@
 package clientsFlUlSort;
 
-public class Individual extends Clients {
+public class Individual extends Client {
+
     private String fio;
     private int year;
     private String gender;
 
-
-    public Individual(int id, String fio, int year, String gender, long inn) {
-        super(id, inn);
-        this.fio = fio;
-        this.year = year;
-        this.gender = gender;
+    public String getFio() {
+        return fio;
     }
 
     public int getYear() {
@@ -18,7 +15,23 @@ public class Individual extends Clients {
     }
 
     public String getGender() {
+
         return gender;
+    }
+
+    public void setFio(String fio) {
+
+        this.fio = fio;
+    }
+
+    public void setYear(int year) {
+
+        this.year = year;
+    }
+
+    public void setGender(String gender) {
+
+        this.gender = gender;
     }
 
     @Override
