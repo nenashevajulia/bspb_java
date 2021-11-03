@@ -1,7 +1,5 @@
 package lesson_7_2;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         Dictionary dictionary = new Dictionary();
@@ -19,5 +17,4 @@ public class Main {
         System.out.println(dictionary.get(true));
 
     }
-
 }
